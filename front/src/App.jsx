@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Shop from './components/Shop.jsx';
-import Checkout from './components/Checkout.jsx';
 import Footer from './components/Footer.jsx';
 import About from './components/About.jsx';
 import Auth from './components/Auth.jsx';
@@ -18,7 +17,6 @@ export default function App() {
           <>
             <Hero />
             <About />
-            <Checkout />
             <Footer />
           </>
         } />
