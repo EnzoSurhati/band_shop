@@ -27,7 +27,7 @@ export default function ProductCard({ image, title, price }) {
       <div className="card-footer">
         <span className="text-title">${price}</span>
         <div className="card-button" onClick={handleAdd}>
-          <FiShoppingCart size={22} style={{ cursor: "pointer" }} />
+        <FiShoppingCart size={16} className="cart-icon" style={{ cursor: 'pointer' }} />
         </div>
       </div>
     </Card>
@@ -82,16 +82,15 @@ const Card = styled.div`
   }
 
   .svg-icon {
-    width: 24px;
-    height: 24px;
-    color: #333;
+    color: #252525;
   }
 
   .card-button {
-    border: 1px solid #252525;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #252525;
     padding: 0.3em;
-    cursor: pointer;
     border-radius: 50px;
     transition: 0.3s ease-in-out;
   }
@@ -103,7 +102,7 @@ const Card = styled.div`
   }
 
   .card-button:hover {
-    border: 1px solid #ffcaa6;
+    border-color: ffcaa6;
     background-color: #ffcaa6;
   }
 `;

@@ -416,9 +416,20 @@ header:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 8px 0;
   border-bottom: 1px solid #eee;
   font-size: 1.1rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.remove-btn:hover {
+  text-decoration: underline;
 }
 
 .cart-item:last-child {
